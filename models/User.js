@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema(
       default: 0,
     },
     password: String,
-    
+    chats: [{ type: mongoose.Types.ObjectId, ref: "Chat" }],
   },
   { timeStamps: true }
 );

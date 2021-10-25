@@ -1,5 +1,15 @@
 const mongoose = require("mongoose");
 
+/* 
+MessageSchema consists of
+
+1. sender details
+2. receiver details
+3. messagetext
+4. Timestamps
+
+*/
+
 const messageSchema = new mongoose.Schema(
   {
     from: {
